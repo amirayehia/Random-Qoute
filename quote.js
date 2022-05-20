@@ -1,0 +1,5 @@
+let quoteArray = ['“Be yourself; everyone else is already taken.” <br> <b>― Oscar Wilde</b> ', "“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.” <br> <b>― Marilyn Monroe</b> ", "“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.” <br> <b>― Albert Einstein</b> ", "“So many books, so little time.” <br> <b>― Frank Zappa</b>", "“A room without books is like a body without a soul.” <br> <b>― Marcus Tullius Cicero</b>", "“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” <br> <b>― Bernard M. Baruch</b>"];
+document.querySelector('button').onclick = function(){
+    let randomNumber = Math.floor(Math.random() * quoteArray.length);
+    document.querySelector('h3').innerHTML = quoteArray[randomNumber]
+}
